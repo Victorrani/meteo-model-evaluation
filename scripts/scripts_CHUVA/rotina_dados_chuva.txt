@@ -3,10 +3,18 @@
 --> Dados de chuva MERGE para avaliação do MODE 
 --> https://ftp1.cptec.inpe.br/modelos/tempo/MERGE/GPM/HOURLY/
 
+script: get_MERGE.py
+
 Início:2024021400 
 Fim:2024022300 
 delta_t = 1 hora
 
---> Rotina para transformar todos os dados no formato grib2 para o formato netCDF
+--> script para transformar todos os dados no formato grib2 para o formato netCDF
 
-script grib2_to_nc.sh
+script: grib2_to_nc.sh
+
+--> script para selecionar o domínio de interesse 
+
+script: lat_lon.sh
+
+ 
