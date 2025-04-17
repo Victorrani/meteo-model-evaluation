@@ -1,0 +1,12 @@
+2025/04/17
+
+--> Dados de chuva MERGE para avaliação do MODE 
+--> https://ftp1.cptec.inpe.br/modelos/tempo/MERGE/GPM/HOURLY/
+
+Início:2024021400 
+Fim:2024022300 
+delta_t = 1 hora
+
+--> Rotina para transformar todos os dados no formato grib2 para o formato netCDF
+
+script grib2_to_nc.sh
